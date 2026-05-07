@@ -9,8 +9,9 @@
 .bona-nova-regular {
   font-family: "Bona Nova", serif;
   font-weight: 400;
+  font-size: 18px;
   font-style: normal;
-  color: #6FD1D7;
+  color: #00031A;
 }
 
 .bona-nova-bold {
@@ -26,46 +27,92 @@
 }
 
 #hero{
-    background-color: #093C5D;
-    color: #5DF8D8;
-    height: 40vh;
+    background-color: #E6E8FF;
+    color: #000C75;
+    height: max-content;
+    border-radius: 15px;
+    margin-top:30px;
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 15px;
+    z-index: 1;
 }
 
 #about{
-    background-color: #3B7597;
-    color: #6FD1D7;
-    height: 60vh;
+    background-color: #B8BFFF;
+    color: #000C75;
+    height: max-content;
+    border-radius: 15px;
+    margin-top:30px;
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 15px;
+    z-index: 2;
 }
 
 #skills{
-    background-color: #6FD1D7;
+    background-color: #E6E8FF;
     color: #093C5D;
+    border-radius: 15px;
+    margin-top:30px;
+    margin-bottom: 30px;
+    z-index: 1;
 }
 
 #gif{
     width: 400px;
+    border-radius: 15px;
+    margin-top:30px;
+    margin-bottom: 30px;
+    z-index: 2;
+    box-shadow: 10px 10px 15px;
 }
 
 #get_in_touch{
-    background-color: #093C5D;
+    background-color: #8A95FF;
+    color: #e6e8ff !important;
+    border-radius: 15px;
+    margin-top:30px;
+    margin-bottom: 30px;
+    z-index: 20;
+    z-index: 2;    
 }
 
 #footer{
-    background-color: #3B7597;
+    background-color: #E6E8FF;
     color:#6FD1D7;
+    border-radius: 15px;
+    margin-top:30px;
+    margin-bottom: 30px;
+    z-index: 1;
 }
 
 /* Change the copyright text color */
 #footer p {
-    color: #ffffff; /* Or any color you prefer */
+    color: #000857; /* Or any color you prefer */
 }
 
 /* Change the link colors and remove the blue */
 #footer .nav-link {
-    color: #ffffff !important; 
+    color: #000857 !important; 
 }
 
 /* Optional: Add a hover effect so people know they are clickable */
 #footer .nav-link:hover {
-    color: #3B7597 !important;
+    color: #000857 !important;
+}
+
+body{    
+    z-index: -1;    
+    background-color: #000857;
+    height: 100%;
+    position: relative;
+}
+
+body:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  width: 50%;
+  background-image: url('./Media/Photos/—Pngtree—shattered\ glass\ texture\ overlay_15123797.png');
+  z-index: -1;
 }
